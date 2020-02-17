@@ -1,10 +1,11 @@
 <template>
 <div class="topnav" id="myTopnav">
-  <a href="/" class="active">Principal</a>
-  <a href="articulos">Articulos</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
+      <nuxt-link :to="{name: 'index'}" class="logo text-lg">
+        Principal
+      </nuxt-link>
+      <nuxt-link :to="{name: 'posts-id'}" >posts</nuxt-link>
+  
+  <!--<a href="articulos">Articulos</a>-->
 </div>
 </template>
 
